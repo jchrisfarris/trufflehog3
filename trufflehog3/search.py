@@ -81,6 +81,7 @@ def searchiter(
     context: int = 0,
 ) -> Iterator[Issue]:
     """Yield issues found using provided rules."""
+    print(f"Searching: {file.path}")
     content = file.read()
 
     for i, line in enumerate(content.splitlines()):
